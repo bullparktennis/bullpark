@@ -992,20 +992,17 @@ function getData(
     */
 
     const ranking_season1 =
-        [...playerList].sort(
-            (a, b) =>
-                b.score_season1 -
-                a.score_season1
-        );
+        [...playerList]
+            .filter(player => player.score_season1 > 0)
+            .sort(
+                (a, b) =>
+                    b.score_season1 -
+                    a.score_season1
+            );
 
-
-    ranking_season1.forEach(
-        (player, index) => {
-
-            player.currentRank_season1 =
-                index + 1;
-        }
-    );
+    ranking_season1.forEach((player, index) => {
+        player.currentRank_season1 = index + 1;
+    });
 
 
     /*
@@ -1015,20 +1012,17 @@ function getData(
     */
 
     const ranking_season2 =
-        [...playerList].sort(
-            (a, b) =>
-                b.score_season2 -
-                a.score_season2
-        );
+        [...playerList]
+            .filter(player => player.score_season2 > 0)
+            .sort(
+                (a, b) =>
+                    b.score_season2 -
+                    a.score_season2
+            );
 
-
-    ranking_season2.forEach(
-        (player, index) => {
-
-            player.currentRank_season2 =
-                index + 1;
-        }
-    );
+    ranking_season2.forEach((player, index) => {
+        player.currentRank_season2 = index + 1;
+    });
 
 
     /*
@@ -1038,20 +1032,17 @@ function getData(
     */
 
     const ranking_lifetime =
-        [...playerList].sort(
-            (a, b) =>
-                b.score_lifetime -
-                a.score_lifetime
-        );
+        [...playerList]
+            .filter(player => player.score_lifetime > 0)
+            .sort(
+                (a, b) =>
+                    b.score_lifetime -
+                    a.score_lifetime
+            );
 
-
-    ranking_lifetime.forEach(
-        (player, index) => {
-
-            player.currentRank_lifetime =
-                index + 1;
-        }
-    );
+    ranking_lifetime.forEach((player, index) => {
+        player.currentRank_lifetime = index + 1;
+    });
 
 
     /*
