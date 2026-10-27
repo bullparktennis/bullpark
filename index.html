@@ -72,6 +72,15 @@
                 <button
                     type="button"
                     class="nav-link tab-btn"
+                    data-target="#nextWeekSignUps-panel"
+                    role="tab"
+                    aria-selected="false">
+                    Sign Ups
+                </button>
+
+                <button
+                    type="button"
+                    class="nav-link tab-btn"
                     data-target="#playerDetails-panel"
                     role="tab"
                     aria-selected="false">
@@ -87,14 +96,7 @@
                     About Bullpark
                 </button>
 
-                <button
-                    type="button"
-                    class="nav-link tab-btn"
-                    data-target="#nextWeekSignUps-panel"
-                    role="tab"
-                    aria-selected="false">
-                    Sign Ups
-                </button>
+
 
 
 
@@ -212,6 +214,65 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEXT WEEK SIGN UPS -->
+        <section id="nextWeekSignUps-panel" class="tab-panel">
+            <div class="section-heading mb-4">
+                <span class="section-label">UPCOMING MATCHES</span>
+                <h2>Next Week Sign Ups</h2>
+                <p>Sign up for next week here.</p>
+            </div>
+
+            <div class="row g-4 mb-4">
+
+                <div class="col-12 col-md-6">
+                    <div class="card ranking-card h-100">
+                        <div class="card-header">
+                            <h3 class="h5 mb-0">Confirmed Players</h3>
+                        </div>
+                        <div class="card-body">
+                            <ol id="nextWeekPlayers"
+                                class="ranking-list mb-0"></ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card ranking-card h-100">
+                        <div class="card-header">
+                            <h3 class="h5 mb-0">Wait List</h3>
+                        </div>
+                        <div class="card-body">
+                            <ol id="backupQueue"
+                                class="ranking-list mb-0"></ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card signup-card">
+                <div class="card-header">
+                    <h3 class="h5 mb-1">Sign Up for Next Week</h3>
+                    <p class="mb-0 text-secondary small">
+                        Complete the form below to register.
+                    </p>
+                </div>
+
+                <div class="card-body p-2 p-md-3">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdaSuW7rYsAOQoxu8s2pVfwnt3FC_fk00Pi4b1mQgzBAEJCEA/viewform?embedded=true"
+                        title="Next week player sign-up form"
+                        width="100%"
+                        height="850"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0">
+                        Loading…
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -477,64 +538,6 @@
         </section>
 
 
-        <!-- NEXT WEEK SIGN UPS -->
-        <section id="nextWeekSignUps-panel" class="tab-panel">
-            <div class="section-heading mb-4">
-                <span class="section-label">UPCOMING MATCHES</span>
-                <h2>Next Week Sign Ups</h2>
-                <p>Sign up for next week here.</p>
-            </div>
-
-            <div class="row g-4 mb-4">
-
-                <div class="col-12 col-md-6">
-                    <div class="card ranking-card h-100">
-                        <div class="card-header">
-                            <h3 class="h5 mb-0">Confirmed Players</h3>
-                        </div>
-                        <div class="card-body">
-                            <ol id="nextWeekPlayers"
-                                class="ranking-list mb-0"></ol>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="card ranking-card h-100">
-                        <div class="card-header">
-                            <h3 class="h5 mb-0">Wait List</h3>
-                        </div>
-                        <div class="card-body">
-                            <ol id="backupQueue"
-                                class="ranking-list mb-0"></ol>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card signup-card">
-                <div class="card-header">
-                    <h3 class="h5 mb-1">Sign Up for Next Week</h3>
-                    <p class="mb-0 text-secondary small">
-                        Complete the form below to register.
-                    </p>
-                </div>
-
-                <div class="card-body p-2 p-md-3">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdaSuW7rYsAOQoxu8s2pVfwnt3FC_fk00Pi4b1mQgzBAEJCEA/viewform?embedded=true"
-                        title="Next week player sign-up form"
-                        width="100%"
-                        height="850"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0">
-                        Loading…
-                    </iframe>
-                </div>
-            </div>
-        </section>
 
         <!-- HIDDEN DATA / DEBUG AREA -->
         <div id="data-container" style="display: none;"></div>
