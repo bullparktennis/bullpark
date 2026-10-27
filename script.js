@@ -1358,7 +1358,7 @@ function renderSignUpList(csvText) {
         const li = document.createElement("li");
         li.textContent = playerName;
 
-        if (index < 21) {
+        if (index < 20) {
             signUpElement.appendChild(li);
         } else {
             backupQueue.appendChild(li);
